@@ -9,3 +9,4 @@ boroughs.plot(ax=ax, color="lightgrey", edgecolor='black', linewidth=0.5)
 boroughs.dropna().plot(column='paygap', cmap='Reds', edgecolor='black', linewidth=0.5,
                legend=True, ax=ax, scheme='equal_interval');
 ax.axis('off');
+ax.set_title('Gender pay gap in London (2016)');
