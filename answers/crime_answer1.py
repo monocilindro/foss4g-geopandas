@@ -1,3 +1,4 @@
+# number of data points
 print ('rows in street: '+str(len(street)))
 
 # columns 
