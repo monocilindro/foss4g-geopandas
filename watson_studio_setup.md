@@ -1,23 +1,91 @@
-# IBM Cloud
+## IBM Cloud
 
-# Watson Studio
+- [Sign up](https://ibm.biz/BdzfFJ) for an IBM Cloud account
 
-## Add data to Cloud Object Store (COS)
-The data for this workshop needs to be added to your project. Go to the GitHub repo and download the files in the [data folder](https://github.com/IBMDeveloperUK/foss4g-geopandas/tree/master/data) to your machine. 
+- When you are signed up click `Create Resource` at the top of the Resources page. You can find the resources under the hamburger menu at the top left:
 
-Go to Watson Studio and add the files in the data menu on the right of the notebook (click the 1010 button  at the top right if you do not see this) into COS:
+ ![](https://github.com/IBMDeveloperUK/pandas-workshop/blob/master/images/resources.png)
+ 
+- Search for Watson Studio and click on the tile:
 
-- boundaries.zip
-- 2018-1-metropolitan-street.zip
-- 2018-2-metropolitan-street.zip
-- 2018-metropolitan-stop-and-search.zip
+![](https://github.com/IBMDeveloperUK/jupyter-notebooks-101/blob/master/images/studio.png)
 
-## Create notebook
+- Select the Lite plan and click `Create`.
+- Go back to the Resources list and click on your Watson Studio service that you find under `Services` and then click `Get Started`. 
 
-## Project Access token
+![](https://github.com/IBMDeveloperUK/jupyter-notebooks-101/blob/master/images/launch.png)
 
-As the data files are not simple csv files, we need a little trick to load the data. The first thing you need is a project access token to programmatically access COS.
+## IBM Watson Studio
 
-Click the 3 dots at the top of the notebook to insert the project token that you created earlier. This will create a new cell in the notebook that you will need to run first before continuing with the rest of the notebook. If you are sharing this notebook you should remove this cell, else anyone can use you Cloud Object Storage from this project.
+### 1. Create a new Project
 
-> If you cannot find the new cell it is probably at the top of this notebook. Scroll up, run the cell and continue with section 3.3
+- You should now be in Watson Studio.
+- Create a new project by clicking on `Get Started` and `New Project`, or `Create Project`
+- Give your Project a name.
+- Select an Object Storage from the drop-down menu or create a new one for free. This is used to store the notebooks and data. **Do not forget to click refresh when returning to the Project page.**
+- Click `Create`.  
+
+### 2. Create a Project Access token
+
+To load data into a notebook you need an Access Token. 
+
+- Go the Settings tab at the top of the Project and scroll down to `Access tokens`. 
+- Click `New token`
+- Give the new token a name, select `Editor` and click `Create`
+
+![](https://github.com/IBMDeveloperUK/geopandas-workshop/blob/master/images/token.png)
+
+- You will need this later in the notebook
+
+### 3. Create a custom Python environment
+
+As geopandas is not installed in the default Python environments you need to create a customized environment. This uses `conda create`. But as the environment is running in the Cloud there are a few steps to go through:
+
+- Go to the environments tab at the top of your project
+- Click on `new environment definition`
+
+![](https://github.com/IBMDeveloperUK/geopandas-workshop/blob/master/images/new_env.png)
+
+- Give your new environment a name
+- Keep the default, select the free hardware configuration `Free - 1 vCPU and 4 GB RAM`, `Default Python 3.6` and click `Create`
+
+![](https://github.com/IBMDeveloperUK/geopandas-workshop/blob/master/images/customize.png)
+
+- In the next screen you can customize the new environment. Scroll down and click on the `Create` link under Customization
+
+![](https://github.com/IBMDeveloperUK/geopandas-workshop/blob/master/images/customize_env.png)
+
+- A textfield appears that you can edit. Delete all text and copy and paste the below into the textfield:
+
+```
+channels:
+- defaults
+- conda-forge
+
+# Please add conda packages here
+dependencies:
+- geopandas=0.4.1
+- geoplot=0.2.4
+- pysal=2.0.0
+- folium=0.9.1
+- python=3.6.8
+
+# Please add pip packages here
+# To add pip packages, please comment out the next line
+#- pip:
+```
+- Click `Apply`
+
+- Now you can use this new environment to run notebooks
+
+## 4. Load and run a notebook
+
+-  Add a new notebook. Click `Add to project` and choose `Notebook`:
+
+![](https://github.com/IBMDeveloperUK/pandas-workshop/blob/master/images/addnotebook.png)
+
+- Choose new notebook `From URL`. Give your notebook a name and copy the URL `https://github.com/IBMDeveloperUK/crime-data-workshop/blob/master/notebooks/crime-data-workshop.ipynb`
+- Select the **custom runtime enviroment** that you created and click `Create Notebook`. 
+-  The notebook will load. 
+ 
+You are now ready to follow along with the workshop in the notebook!
