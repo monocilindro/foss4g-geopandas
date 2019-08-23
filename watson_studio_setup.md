@@ -78,7 +78,7 @@ dependencies:
 
 - Now you can use this new environment to run notebooks
 
-## 4. Load and run a notebook
+### 4. Load and run a notebook
 
 -  Add a new notebook. Click `Add to project` and choose `Notebook`:
 
