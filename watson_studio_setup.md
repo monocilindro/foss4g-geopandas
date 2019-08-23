@@ -84,8 +84,12 @@ dependencies:
 
 ![](https://github.com/IBMDeveloperUK/pandas-workshop/blob/master/images/addnotebook.png)
 
-- Choose new notebook `From URL`. Give your notebook a name and copy the URL `https://github.com/IBMDeveloperUK/crime-data-workshop/blob/master/notebooks/crime-data-workshop.ipynb`
+- Choose new notebook `From URL`. Give your notebook a name and copy the URL `https://github.com/IBMDeveloperUK/foss4g-geopandas/blob/master/notebooks/1-pandas-workshop.ipynb`
 - Select the **custom runtime enviroment** that you created and click `Create Notebook`. 
--  The notebook will load. 
+-  The notebook will load.
+- Go back to the project page and repeat this for the other 2 notebooks that we will use in this workshop. Make sure you select your **custom runtime enviroment** for both :
+ - `https://github.com/IBMDeveloperUK/foss4g-geopandas/blob/master/notebooks/2-geopandas-workshop.ipynb`
+ - `https://github.com/IBMDeveloperUK/foss4g-geopandas/blob/master/notebooks/3-crime-data-workshop.ipynb`
+
  
 You are now ready to follow along with the workshop in the notebook!
