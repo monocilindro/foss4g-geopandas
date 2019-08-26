@@ -18,6 +18,7 @@ You can either run the notebooks locally, or use Watson Studio. Watson Studio ru
 
 For all options please download the [workshop repository](https://github.com/IBMDeveloperUK/foss4g-geopandas).
 
+Use one of the below options:
 * Download the repo by clicking the green download button
 * Use Github Desktop 
 * Open a terminal and go to the directory where you want to work and type the following: 
