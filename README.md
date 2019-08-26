@@ -14,14 +14,17 @@ During the workshop we will analyse UK Crime Data with Pandas and GeoPandas in a
 
 You can run the Jupyter notebooks in any environment of your choice. Below are the environments that will be supported during the workshop, but feel free to use another one if you are comfortable with setting up a costom environment.
 
-You can either run the notebooks locally, or use Watson Studio. Watson Studio runs in the Cloud, so for this option you do not have to install anything locally on your own computer and  
+You can either run the notebooks locally, or use Watson Studio. Watson Studio runs in the Cloud, so for this option you do not have to install anything locally on your own computer, but still can go back to the notebooks later. 
 
 For all options please download the [workshop repository](https://github.com/IBMDeveloperUK/foss4g-geopandas).
 
-* Download the repo by clicking the download button
+* Download the repo by clicking the green download button
 * Use Github Desktop 
 * Open a terminal and go to the directory where you want to work and type the following: 
 
+`git clone https://github.com/IBMDeveloperUK/foss4g-geopandas.git`
+
+Detailed instructions are [here](https://help.github.com/en/articles/cloning-a-repository)
 
 # Instructions to run the workshop Jupyter notebooks
 
