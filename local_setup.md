@@ -28,7 +28,7 @@ Activate the new custom environment:
 
 Create a jupyter kernel from the new environment:
 
-`python -m ipykernel install --user --name foss4g --display-name "Python (foss4g)`
+`python -m ipykernel install --user --name foss4g --display-name "Python (foss4g)"`
 
 Then start the notebook environment, which will open a web browser:
 
