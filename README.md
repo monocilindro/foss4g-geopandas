@@ -10,7 +10,7 @@ This workshop is an introduction to Pandas and GeoPandas where you will learn ab
 
 During the workshop we will analyse UK Crime Data with Pandas and GeoPandas in a Jupyter notebook. We first will look at the properties of geospatial data and explore the different commands. After you have learned the basics we will go through some exercises analysing UK Crime Data to explore patterns and trends and create maps of crime rates in London.
 
-# Setup
+# Setup 
 
 You can run the Jupyter notebooks in any environment of your choice. Below are the environments that will be supported during the workshop, but feel free to use another one if you are comfortable with setting up a costom environment.
 
